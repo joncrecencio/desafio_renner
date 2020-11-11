@@ -35,6 +35,11 @@ ul li:hover{
     color: black;
 }
 
+.car{
+    color: black;
+    text-decoration: none;
+}
+
 .car i{
     zoom: 1.3;
 }
