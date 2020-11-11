@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css"
+        integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A=="
+        crossorigin=""/>
+         <!-- Make sure you put this AFTER Leaflet's CSS -->
+        <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"
+        integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA=="
+        crossorigin=""></script>
+        <link rel="stylesheet" href="/css/main.css">
+        <link rel="stylesheet" href="/css/page-stores.css">
+        <link rel="stylesheet" href="/css/page-landing.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title> Selecione uma loja | Flash</title>
+        <link rel="icon" href="/image/logo.svg">
+    </head>
+    <body>
+        <div id="page-stores">
+            <aside class="animate-right">
+                <header>
+                    <a href="/"><img src="image/logo.svg" alt="Flash" id="logo"></a>
+                    <h2>Escolha uma de nossas lojas no mapa</h2>
+                    <p>Escolhas seus produtos e recebe em até 3 horas</p>
+                </header>
+
+                <footer>
+                    <strong>Santos</strong>
+                    <p>São Paulo</p>
+                </footer>
+            </aside>
+
+            <div id="mapid" class="animate-appear"></div><!--mapid-->
+
+           <div class="store">
+                 {{#each store}}
+                    <span hidden
+                        data-id="{{this.id}}"
+                        data-name="{{this.name}}"
+                        data-lat="{{this.lat}}"
+                        data-lng="{{this.lng}}"
+                    ></span>
+                {{/each}}
+
+            </div>
+           
+            
+                
+        </div><!--page-stores-->
+
+
+        <script src="/js/pages-stores.js"></script>
+    </body>
+</html>

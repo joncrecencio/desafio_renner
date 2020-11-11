@@ -1,0 +1,169 @@
+#login{
+    min-height: 100vh;
+    background: linear-gradient(329.54deg, #b1140a 0%, #FFE600 100%);
+    display: flex;
+}
+
+#container{
+    width: min(90%, 1120px);
+    padding: 0 20px;
+    margin: 0px auto;
+}
+
+header{
+    width: 100%;
+    padding: 15px;
+}
+
+header a{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+}
+
+header .logo-login{
+    height: 80px;
+    width: 80px;
+}
+
+header h1{
+    color: white;
+    margin-left: 10px;
+    font-size: 45px;
+}
+
+main{
+    display: flex;
+}
+
+form{
+    max-width: 500px;
+    margin: 64px auto;
+    background: #fff;
+    border: 1px solid #b1140a;
+    border-radius: 20px;
+    overflow: hidden;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex: 1;
+}
+
+fieldset{
+    border: 0;
+    width: 70%;
+}
+
+fieldset legend{
+    width: 100%;
+    font-size: 32px;
+    line-height: 1.5;
+    color: #b1140a;
+    font-weight: bold;
+    border-bottom: 1px solid #FFE600;
+    margin-bottom: 15px;
+    padding: 0 2%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+fieldset legend img{
+    height: 25px;
+    width: 25px;
+    border-radius: 50%;
+    background-color: #b1140a;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 16px;
+}
+
+.input-block + .input-block{
+    margin-top: 18px;
+}
+
+.input-block{
+    display: flex;
+    flex-direction: column;
+}
+
+.input-block label{
+    color: #b1140a;
+    margin-bottom: 4px;
+    line-height: 1.5;
+}
+
+.input-block input{
+    width: 100%;
+    height: 45px;
+    padding: 0 8px;
+    background: #f5f8fa;
+    border: 1px solid #bb908d;
+    border-radius: 5px;
+    color: #141414;
+    outline: 0;
+}
+
+.input-block input:valid{
+    border: 1px solid #a1e9c5;
+}
+
+.button-block{
+    display: flex;
+    justify-content: space-between;
+}
+
+.button-block .btn{
+    border: 1px solid #b1140a;
+    width: 45%;
+    font-weight: bold;
+    background-color:  #b1150a9a;
+    text-decoration: none;
+    margin: 18px auto 18px auto;
+    color: #FFF;
+    height: 45px;
+    padding: 0 2%;
+    border-radius: 24px;
+    cursor: pointer;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    transition:600ms; 
+}
+
+.button-block .btn-register{
+    border: 1px solid #FFE600;
+    width: 45%;
+    font-weight: bold;
+    background-color:  #ffe60093;
+    text-decoration: none;
+    margin: 18px auto 18px auto;
+    color: #FFF;
+    height: 45px;
+    padding: 0 2%;
+    border-radius: 24px;
+    cursor: pointer;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    transition:600ms; 
+}
+
+.button-block .btn:hover{
+    background-color: #b1140a;
+    border: none;
+    color: #FFE600;
+}
+
+.button-block .btn-register:hover{
+    background-color: #b1140a;
+    border: none;
+    color: #FFE600;
+}

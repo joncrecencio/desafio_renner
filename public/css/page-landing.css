@@ -1,0 +1,127 @@
+#page-landing{
+    min-height: 100vh;
+    background: linear-gradient(329.54deg, #b1140a 0%, #FFE600 100%);
+    display: flex;
+}
+
+#container{
+    width: min(90%, 1120px);
+
+    background: url("../image/image.svg") no-repeat;
+    background-position: 80%;
+    background-size: clamp(300px, 45vw, 550px);
+    padding: 0 20px;
+    margin: 0px auto;
+}
+
+
+header{
+    width: 100%;
+    padding: 15px;
+    display: flex;
+    align-items: center;
+}
+
+header #logo{
+    height: 80px;
+    width: 80px;
+}
+
+header h1{
+    color: white;
+    margin-left: 10px;
+    font-size: 45px;
+}
+
+main h1{
+    font-size: clamp(30px, 7vw, 80px);
+    line-height: 1;
+    margin: clamp(4%, 3vh, 6%) 0 30px;
+    width: min(300px, 80%);
+    color: white;
+}
+
+main section.proposal{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+main section.proposal p{
+    color: white;
+    font-size: 20px;
+    line-height: 30px;
+    width: clamp(250px, 35vw, 400px);
+    margin-top: initial;
+}
+
+main section.proposal a{
+    height: 60px;
+    width: 60px;
+    border: none;
+    border-radius: 50%;
+    background-color: #ffe60093;
+
+    transition: background-color 600ms;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+main section.proposal a:hover{
+    background-color: #FFE600;
+}
+
+
+@media (max-width: 768px){
+    #container{
+        margin: auto;
+        width: min(90%, 1120px);
+    }
+
+    header{
+        align-items: center;
+        justify-content: center;
+    }
+
+}
+
+@media (max-width: 600px){
+    #container{
+        background: none;
+    }
+
+    header h1{
+        font-size: 35px;
+    }
+    
+    main h1{
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    main section.proposal{
+        height: 50vh;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    main section.proposal p{
+        width: 100%;
+        margin-top: 60px;
+    }
+}
+
+@media (max-height: 1366px){
+    #container{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+}

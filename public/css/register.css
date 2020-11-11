@@ -1,0 +1,11 @@
+#register{
+    min-height: 100vh;
+    background: linear-gradient(329.54deg, #b1140a 0%, #FFE600 100%);
+    display: flex;
+}
+
+.container{
+    width: min(90%, 1120px);
+    padding: 0 20px;
+    margin: 0px auto;
+}
