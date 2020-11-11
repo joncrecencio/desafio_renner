@@ -13,6 +13,7 @@
         <link rel="stylesheet" href="/css/main.css">
         <link rel="stylesheet" href="/css/page-stores.css">
         <link rel="stylesheet" href="/css/page-landing.css">
+        <link rel="stylesheet" href="/css/login.css">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title> Selecione uma loja | Flash</title>
         <link rel="icon" href="/image/logo.svg">
@@ -46,11 +47,26 @@
 
             </div>
            
+               <div class="modal-overlay">
+                    <div class="modal">
+                        <div class="context">
+                            <div class="input-map">
+                                <label for="cep">CEP</label>
+                                <input type="text" name="cep" id="cep" placeholder="99999-000" maxlength="9">
+                            </div>
+
+                            <div class="button-map">
+                                <button class="btn">Consultar</button>
+                            </div>
+                        </div><!--context-->
+                    </div><!--modal-->
+                </div><!--modal-overlay-->
             
                 
         </div><!--page-stores-->
 
-
+        <script src="/js/modal.js"></script>
         <script src="/js/pages-stores.js"></script>
+
     </body>
 </html>
