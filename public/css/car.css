@@ -1,10 +1,13 @@
+body{
+    background-color: rgb(241, 241, 241);
+}
+
 #car-item{
     width: 80%;
     height: 100vh;
     display: flex;
     margin: 15px auto;
     gap: 10px;
-    background-color: rgba(250, 217, 217, 0.185);
 }
 
 .items{
@@ -12,6 +15,8 @@
     height: 100%;
     display: flex;
     justify-content: center;
+    background-color: #fff;
+    border-radius: 15px;
 }
 
 .product-selected{
@@ -79,25 +84,49 @@
 .price-freight{
     width: 40%;
     height: 100%;
-    border-left: 1px solid #141414;
     padding: 0 2%;
     display: flex;
     flex-direction: column;
+    background-color: #fff;
+    border-radius: 15px;
 }
 
 .price-freight .price-product{
     display: flex;
     justify-content: space-between;
+    padding: 0px 10px;
+    margin-top: 50px;
+
 }
 
 .price-freight .freight{
     display: flex;
     justify-content: space-between;
+    padding: 10px;
+    margin-top: 35px;
 }
 
 .price-freight .total{
     display: flex;
     justify-content: space-between;
+    padding: 10px;
+}
+
+.price-freight button{
+    width: 150px;
+    height: 35px;
+    border: 1px solid #e64e44;
+    background-color: #b1140a;
+    color: white;
+    border-radius: 15px;
+    margin: 28px auto 0 auto;
+    cursor: pointer;
+    transition: 600ms;
+}
+
+.price-freight button:hover{
+    transition: 600ms;
+    background-color: #b1150ad0;
 }
 
 
