@@ -1,0 +1,107 @@
+#car-item{
+    width: 80%;
+    height: 100vh;
+    display: flex;
+    margin: 15px auto;
+    gap: 10px;
+    background-color: rgba(250, 217, 217, 0.185);
+}
+
+.items{
+    width: 60%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.product-selected{
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    margin-top: 50px;
+}
+
+.flex{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+
+    gap: 10px;
+}
+
+.product-selected .product {
+    width: 60%;
+    height: 330px;
+    display: flex;
+}
+
+.product-selected .product .product-principal{
+    height: 330px;
+    width: 250px;
+    object-fit: cover;
+    border-radius: 15px;
+}
+
+.product-selected .miniature{
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+.product-selected .miniature button:first-child{
+    margin-top: 0;
+}
+
+.product-selected .miniature button{
+    border: none;
+    border-radius: 15px;
+    overflow: hidden;
+    height: 80px;
+    width: 80px;
+    margin-top: 8px;
+    cursor: pointer;
+}
+
+
+.product-selected .miniature button img{
+    height: 80px;
+    width: 80px;
+    object-fit: cover;
+}
+
+.product-selected .infos{
+    max-width: 250px;
+    font-size: 13px;
+    color: #141414;
+}
+
+.price-freight{
+    width: 40%;
+    height: 100%;
+    border-left: 1px solid #141414;
+    padding: 0 2%;
+    display: flex;
+    flex-direction: column;
+}
+
+.price-freight .price-product{
+    display: flex;
+    justify-content: space-between;
+}
+
+.price-freight .freight{
+    display: flex;
+    justify-content: space-between;
+}
+
+.price-freight .total{
+    display: flex;
+    justify-content: space-between;
+}
+
+
+
+
+
+

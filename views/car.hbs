@@ -6,6 +6,8 @@
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" integrity="sha384-gfdkjb5BdAXd+lj+gudLWI+BXq4IuLW5IT+brZEZsLFm++aCMlF1V92rMkPaX4PP" crossorigin="anonymous">
     <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="css/showcase.css">
+    <link rel="stylesheet" href="css/car.css">
+    <link rel="icon" href="/image/logo.svg">
     <title>Carrinho | Flash</title>
 </head>
 <body>
@@ -19,13 +21,53 @@
                 <li>Contatos</li>
             </ul>
 
-            <div class="car"><i class="produtos__icone fas fa-shopping-cart"></i></div>
+            <a href="#" class="car"><i class="produtos__icone fas fa-shopping-cart"></i></a>
         </header>
     </div><!--container-->
 
-    <main>
+    <div id="car-item">
+            <section class="items">
+                <div class="product-selected">
 
-    </main>
+                    <div class="flex">
+                        <div class="product">
+                            <img class="product-principal" src="image/produto1.png" alt="">
+                        </div><!--product-->
+                        
+                            <div class="miniature">
+                                <button><img src="image/produto1.png" alt=""></button>
+                                <button><img src="image/produto1.png" alt=""></button>
+                                <button><img src="image/produto1.png" alt=""></button>
+                                <button><img src="image/produto1.png" alt=""></button>
+                            </div>
+                    </div>
+
+                    <div class="infos">
+                        <p>Este produto é feito com algodão de melhor qualidade!</p>
+                    </div><!--infos-->
+                </div><!--product-selected-->
+            </section><!--items-->
+
+            <section class="price-freight">
+                <div class="price-product">
+                    <span>Produto 01</span>
+                    <span>R$ 25,99</span>
+                </div><!--price-product-->
+
+                <div class="freight">
+                    <span>Frete VIP</span> 
+                    <span>R$9,99</span>
+                </div> <!--freight-->
+
+                <div class="total">
+                    <span>Total</span>
+                    <span>R$35,98</span>
+                </div>
+
+                <button>Comprar!</button>
+            </section><!--price-freight-->
+    </div><!--car-item-->
+
     <footer>
         <div class="links">
             <div class="redes">

@@ -35,5 +35,10 @@ server
     return res.render('stores')
 })
 
+.get("/car", function(req, res){
+    return res.render('car')
+})
+
+
 // Ligar o servidor
 server.listen(3000)
