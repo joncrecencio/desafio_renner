@@ -1,10 +1,23 @@
 //Create Map
-const latitude = document.querySelector('#latSpan')
-const longitude = document.querySelector('#lonSpan')
-const map = L.map('mapid').setView([-23.9554498,-46.3702686], 13);
+function geoLocation(){
+    if('geolocation' in navigator){
+        navigator.geolocation.getCurrentPosition(function(position){
+            const latitude = position.coords.latitude
+            const longitude = position.coords.longitude
+            const map = L.map('mapid').setView([latitude, longitude], 13);
 
-//Create and add tileLayer
-L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png').addTo(map);
+            //Create and add tileLayer
+            L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png').addTo(map);
+            console.log(`a latitude ${latitude} e a longitude ${longitude}`)
+        }, function(error){
+            console.log(error)
+        })
+    }else{
+        alert('ops não foi possivel pegar a localização')
+    }   
+}
+
+geoLocation()
 
 //create icon
 const icon = L.icon({

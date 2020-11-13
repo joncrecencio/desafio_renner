@@ -33,6 +33,13 @@ server
     return res.render('stores')
 })
 
+.post("/saveCep", function(req, res){
+    const cep = req.body
+
+    if(Object.values(cep).includes('')){
+        return res.send("Todos os campos devem ser preenchidos!")
+    }
+})
 .get("/car", function(req, res){
     return res.render('car')
 })
