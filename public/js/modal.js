@@ -9,12 +9,15 @@ function addActive(){
 }
 
 // Desativando o modal, validação temporaria.
-document.querySelector('.button-map').addEventListener('click', () =>{
+document.querySelector('.button-map').addEventListener('click', function validate(event){
     const cepClear = cep.value.replace("-", "") 
         if(cepClear){
             modalOverlay.classList.remove("active")
+            event.preventDefault()
         }else{
             alert("informe um cep válido")
         }
 })
+
+
 

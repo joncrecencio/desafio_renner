@@ -35,6 +35,9 @@
 
             <div id="mapid" class="animate-appear"></div><!--mapid-->
 
+            <span hidden data-lat="{{latitude}}" id="latSpan"></span>
+            <span hidden data-lon="{{longitude}}" id="lonSpan"></span>
+
            <div class="store">
                  {{#each store}}
                     <span hidden
@@ -49,7 +52,7 @@
            
                <div class="modal-overlay">
                     <div class="modal">
-                        <div class="context">
+                        <form method="get" onsubmit="validate(event)" class="context">
                             <div class="input-map">
                                 <label for="cep">CEP</label>
                                 <input type="text" name="cep" id="cep" placeholder="99999-000" maxlength="9">
@@ -58,13 +61,14 @@
                             <div class="button-map">
                                 <button class="btn">Consultar</button>
                             </div>
-                        </div><!--context-->
+                        </form><!--context-->
                     </div><!--modal-->
                 </div><!--modal-overlay-->
             
                 
         </div><!--page-stores-->
 
+    
         <script src="/js/modal.js"></script>
         <script src="/js/pages-stores.js"></script>
 

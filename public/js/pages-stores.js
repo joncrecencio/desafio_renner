@@ -1,4 +1,6 @@
 //Create Map
+const latitude = document.querySelector('#latSpan')
+const longitude = document.querySelector('#lonSpan')
 const map = L.map('mapid').setView([-23.9554498,-46.3702686], 13);
 
 //Create and add tileLayer
