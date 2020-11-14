@@ -14,20 +14,3 @@
 
     Para este caso, é necessário abrir dentro de um editor de texto (VSCode de preferência), utilizar a extensão live server,neste processo, ele pegará a sua geolocalização (pedirá uma autorização para utilizar), como não temos acesso ao banco de dados de todas as lojas, a localização de lojas próximas estão dentro do raio da minha residência.
 
-    Abaixo algumas imagens da aplicação.
-
-    
-    ![Área inicial](/image/Slide1.JPG)
-    ![Localização das lojas](/image/Slide2.JPG)
-    ![Marcação das lojas](/image/Slide3.JPG)
-    ![Loja virtual (demonstração)](/image/Slide4.JPG)
-    ![Loja virtual (demonstração)](/image/Slide5.JPG)
-    ![Loja virtual (demonstração)](/image/Slide6.JPG)
-    ![Loja virtual (demonstração)](/image/Slide7.JPG)
-
-
-
-
-
-
-
