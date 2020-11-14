@@ -13,7 +13,6 @@
         <link rel="stylesheet" href="/css/main.css">
         <link rel="stylesheet" href="/css/page-stores.css">
         <link rel="stylesheet" href="/css/page-landing.css">
-        <link rel="stylesheet" href="/css/login.css">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title> Selecione uma loja | Flash</title>
         <link rel="icon" href="/image/logo.svg">
@@ -33,17 +32,11 @@
                 </footer>
             </aside>
 
-            <div id="mapid" class="animate-appear"></div><!--mapid-->
+            <div id="mapid"></div><!--mapid-->
 
-           <div class="store">
-                 {%for store in latLong %}
-                    <span hidden
-                        data-id="{{store.idStore}}"
-                        data-name="{{store.store}}"
-                        data-lat="{{store.lat}}"
-                        data-lng="{{store.lon}}"
-                    ></span>
-                {%endfor%}
+           <div id="store">
+
+
             </div>           
                 
         </div><!--page-stores-->

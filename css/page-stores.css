@@ -21,14 +21,14 @@ aside header{
 aside header h2{
     width: 100%;
     margin-top: 35px;
-    font: 800 clamp(20px, 3vw 32px)'Nunito', sans-serif;
+    font: 800 clamp(22px, 3vw 32px)'Nunito', sans-serif;
     line-height: 1.1;
     color: white;
 }
 
 aside header p{
-    margin-top: 35px;
-    font: 400 14px/1.5 'Nunito', sans-serif;
+    margin-top: 50px;
+    font: 400 18px/1.5 'Nunito', sans-serif;
     color: whitesmoke;
 }
 
@@ -42,16 +42,18 @@ aside footer strong{
     color: whitesmoke;
     font-weight: bold;
     text-align: center;
+    padding: 15px;
 }
 aside footer p{
     margin-top: 2px;
     color: whitesmoke;
+    padding: 15px;
+
 }
 
 #mapid{
     width: 100%;
     height: 100%;
-    animation-delay: 200ms;
 }
 
 .leaflet-popup-content-wrapper{
@@ -71,7 +73,7 @@ aside footer p{
 .leaflet-popup-content a{
     width: 40px;
     height: 40px;
-    background: #15c3d6;
+    background: #b1140a;
     box-shadow: 17.2868px 27.65px 41.48px rgba(23,142,166,0.16);
     border-radius: 12px;
     display: flex;
@@ -80,7 +82,7 @@ aside footer p{
     transition: .2s;
 }
 .leaflet-popup-content a:hover{
-    background: #17d6eb;
+    background: #b1150ad2;
 }
 
 .leaflet-popup-tip{

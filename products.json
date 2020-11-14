@@ -1,0 +1,64 @@
+{
+	"products" : [
+		{
+			"name" : "Gorro",
+			"price" : "25.99",
+			"options" : [
+				{ "Size" : "Tamanho único" }
+			],
+			"image" : "./image/produto1.png",
+			"description" : "Gorro de lã, feito de forma manual."
+		},
+
+		{
+			"name" : "Moletom",
+			"price" : "59.90",
+			"options" : [
+				{ "Size" : "P,M,G,GG,XG" }
+			],
+			"image" : "./image/produto2.png",
+			"description" : "Casaco de moletom na cor rosa"
+		},
+
+		{
+			"name" : "Camiseta Calvin Klein",
+			"price" : "89.90",
+			"options" : [
+				{ "Size" : "P,M,G,GG,XG" }
+			],
+			"image" : "./image/produto3.png",
+			"description" : "Camiseta Calvin Klein feminina diversas cores."
+		},
+
+		{
+			"name" : "Camiseta branca",
+			"price" : "79.90",
+			"options" : [
+				{ "Size" : "P,M,G,GG,XG" }
+			],
+			"image" : "./image/produto4.png",
+			"description" : "Camiseta branca lisa"
+		},
+
+		{
+			"name" : "Bermuda Jeans",
+			"price" : "89.90",
+			"options" : [
+				{ "Size" : "P,M,G,GG,XG" }
+			],
+			"image" : "./image/produto5.png",
+			"description" : "Bermuda jeans feminina"
+		},
+
+		{
+			"name" : "Cardigan",
+			"price" : "35.99",
+			"options" : [
+				{ "Size" : "P,M,G,GG,XG" }
+			],
+			"image" : "./image/produto6.png",
+			"description" : "Cardigan feminino diversos tamanhos"
+		}
+
+	]
+}
