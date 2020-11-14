@@ -1,5 +1,5 @@
 # Este software é somente para mostrar uma solução.
-## Template baseado no Happy da NLW3
+## Template baseado no Happy da NLW3 - Rocketseat
 Como proposto, necessitavamos desenvolver uma solução sobre algum problema específico de uma grande loja, o problema seria, melhorar o atendimento ao cliente e a mobilidade. Com base em pesquisas via reclame aqui, verificamos que existem muitas reclamações quanto a entrega expressa que possui seu prazo de 2 dias úteis.
 
 Pensando nessa reclamação surgiu.. O Flash.
