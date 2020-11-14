@@ -1,9 +1,7 @@
 const express = require('express')
 const nunjucks = require('nunjucks')
 const data = require('./data')
-const latLonStore1 = require('./store1')
-const latLonStore2 = require('./store2')
-const latLonStore3 = require('./store3')
+const latLonStore = require('./stores')
 
 
 const server = express()
@@ -32,14 +30,14 @@ server.get("/register", function(req, res){
 })
 
 server.get("/showcase", function(req, res){
-    return res.render('showcase', {items: data, latLong: latLonStore1})
+    return res.render('showcase', {items: data, latLong: latLonStore[0]})
 })
 
 server.get("/showcase2", function(req, res){
-    return res.render('showcase', {items: data, latLong: latLonStore2})
+    return res.render('showcase', {items: data, latLong: latLonStore[1]})
 })
 server.get("/showcase3", function(req, res){
-    return res.render('showcase', {items: data, latLong: latLonStore3})
+    return res.render('showcase', {items: data, latLong: latLonStore[2]})
 })
 
 server.get("/stores", function(req, res){

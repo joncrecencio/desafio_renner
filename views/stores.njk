@@ -36,14 +36,14 @@
             <div id="mapid" class="animate-appear"></div><!--mapid-->
 
            <div class="store">
-                 {{#each store}}
+                 {%for store in latLong %}
                     <span hidden
-                        data-id="{{this.id}}"
-                        data-name="{{this.name}}"
-                        data-lat="{{this.lat}}"
-                        data-lng="{{this.lng}}"
+                        data-id="{{store.idStore}}"
+                        data-name="{{store.store}}"
+                        data-lat="{{store.lat}}"
+                        data-lng="{{store.lon}}"
                     ></span>
-                {{/each}}
+                {%endfor%}
             </div>           
                 
         </div><!--page-stores-->
