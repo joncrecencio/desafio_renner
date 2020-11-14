@@ -1,46 +1,52 @@
 const express = require('express')
-const path =  require('path')
+const nunjucks = require('nunjucks')
 const data = require('./data')
+const latLonStore1 = require('./store1')
+const latLonStore2 = require('./store2')
+const latLonStore3 = require('./store3')
 
 
 const server = express()
 
-server
-.use(express.urlencoded({extended:true}))
-.use(express.static('public'))
-.set('views', path.join(__dirname, "views"))
-.set('view engine', 'hbs')
+
+server.use(express.static('public'))
+server.set('view engine', 'njk')
+    nunjucks.configure("views", {
+    express: server,
+    autoescape:false,
+    noCache: true
+})
 
 
 // Rotas da aplicação
-.get("/", function(req, res){
+server.get("/", function(req, res){
     return res.render('index')
 })
 
-.get("/login", function(req, res){
+server.get("/login", function(req, res){
     return res.render('login')
 })
 
-.get("/register", function(req, res){
+server.get("/register", function(req, res){
     return res.render('register')
 })
 
-.get("/showcase", function(req, res){
-    return res.render('showcase')
+server.get("/showcase", function(req, res){
+    return res.render('showcase', {items: data, latLong: latLonStore1})
 })
 
-.get("/stores", function(req, res){
+server.get("/showcase2", function(req, res){
+    return res.render('showcase', {items: data, latLong: latLonStore2})
+})
+server.get("/showcase3", function(req, res){
+    return res.render('showcase', {items: data, latLong: latLonStore3})
+})
+
+server.get("/stores", function(req, res){
     return res.render('stores')
 })
 
-.post("/saveCep", function(req, res){
-    const cep = req.body
-
-    if(Object.values(cep).includes('')){
-        return res.send("Todos os campos devem ser preenchidos!")
-    }
-})
-.get("/car", function(req, res){
+server.get("/car", function(req, res){
     return res.render('car')
 })
 

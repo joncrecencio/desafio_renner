@@ -6,7 +6,7 @@
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" integrity="sha384-gfdkjb5BdAXd+lj+gudLWI+BXq4IuLW5IT+brZEZsLFm++aCMlF1V92rMkPaX4PP" crossorigin="anonymous">
     <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="css/showcase.css">
-    <link rel="icon" href="/image/logo.svg">
+    <link rel="icon" href="image/logo.svg">
     <title>Vitrine | Flash</title>
 </head>
 <body>
@@ -41,9 +41,28 @@
 
         <div class="container">
             <div class="cards">
-                <div class="card">
 
+                    {% for item in items%}
+                <div class="card">
+                    <img src="{{item.imgProduct}}" alt="{{item.nameProduct}}">
+                    <div class="content">
+                        <h1>{{item.nameProduct}}</h1>
+                        <h2>R$ {{item.priceProduct}}</h2>
+                    </div><!--content-->
+
+                    <div class="estoque">
+                        <p class="qnt_estoque">
+                            <i class="produtos__icone fas fa-tags"></i>
+                            {{item.stockProduct}}
+                        </p>
+
+                        <button class="button_add_car">
+                            <i class="produtos__icone fas fa-shopping-cart"></i>
+                            Adicionar
+                        </button>
+                    </div><!--estoque-->
                 </div><!--card-->
+                {%endfor%}
 
             </div><!--cards-->
         </div><!--container-->
@@ -70,6 +89,5 @@
             <p>Disponível no Google Play</p>
         </div>
     </footer>
-    <script src="/data.js"></script>
 </body>
 </html>
