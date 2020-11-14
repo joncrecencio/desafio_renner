@@ -4,7 +4,7 @@ function geoLocation(){
         navigator.geolocation.getCurrentPosition(function(position){
             const latitude = position.coords.latitude
             const longitude = position.coords.longitude
-            const map = L.map('mapid').setView([latitude, longitude], 12);
+            const map = L.map('mapid').setView([latitude, longitude], 13);
 
             //Create and add tileLayer
             L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png').addTo(map);
